@@ -1,0 +1,21 @@
+name: path_bug
+description: A new brick created with the Mason CLI.
+version: 0.1.0+1
+environment:
+  mason: ">=0.1.0-dev.39 <0.1.0"
+vars:
+  project_name:
+    type: string
+    description: The project name
+    default: my_app
+    prompt: "What is the project name?"
+  org_name:
+    type: string
+    description: The organization name
+    default: com.example
+    prompt: "What is the organization name?"
+  android:
+    type: boolean
+    description: The project supports the Android platform
+    default: false
+    prompt: "Enable Android?"
